@@ -38,6 +38,11 @@ class Stack{
             cerr << "Warning: Empty Stack" << endl;
         }
 
+        T peek(){
+            if(isempty()) return NULL;
+            else return head->data;
+        }
+
         unsigned display(){
             Node *curr = head;
             unsigned length = 0;
